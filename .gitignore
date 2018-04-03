@@ -1,0 +1,11 @@
+# python files
+*.pyc
+
+# django migrations files
+**/migrations/
+**/__pycache__/
+
+env/
+env*/
+
+#db.sqlite3
