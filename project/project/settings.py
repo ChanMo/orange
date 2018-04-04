@@ -125,4 +125,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+SITE_NAME = 'ORANGE'

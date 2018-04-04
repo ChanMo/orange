@@ -2,7 +2,7 @@
 *.pyc
 
 # django migrations files
-**/migrations/
+#**/migrations/
 **/__pycache__/
 
 env/

@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+
+admin.site.site_header = settings.SITE_NAME
 
 urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
