@@ -22,5 +22,5 @@ admin.site.site_header = settings.SITE_NAME
 urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('admin/', admin.site.urls),
-    path('', include('page.urls'))
+    path('', include('page.urls')),
 ]

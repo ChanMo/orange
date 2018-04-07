@@ -4,6 +4,6 @@ from .models import Page
 def index(request):
     return render(request, 'index.html')
 
-def detail(request, slug):
-    page = get_object_or_404(Page, slug=slug)
+def detail(request, pk):
+    page = get_object_or_404(Page, pk=pk)
     return render(request, 'default.html', {'page':page})

@@ -7,7 +7,6 @@ from mptt.models import MPTTModel, TreeForeignKey
 
 class Page(MPTTModel):
     title = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200, null=True, blank=True)
     parent = TreeForeignKey('self', null=True, blank=True,
             related_name='children', db_index=True, on_delete=models.CASCADE)
     content = RichTextUploadingField(null=True, blank=True)
@@ -42,4 +41,4 @@ class Page(MPTTModel):
         if self.link:
             return self.link
         else:
-            return '/%s/' % self.slug
+            return '/%d/' % self.pk
